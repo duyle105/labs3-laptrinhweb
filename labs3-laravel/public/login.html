@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lập trình web</title>
+    <style>
+        body {
+            padding: 5px;
+            margin: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            border: 2px solid black;
+            color: black;
+            text-align: center;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        a:hover {
+            font-weight: bold;
+            color: #15d5eb;
+        }
+
+        .main {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        .linkquen {
+            color: #15d5eb;
+            margin-left: 100px;
+            margin-right: 30px;
+        }
+
+        .footer {
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html"> Home |</a>
+        <a href="login.html"> Đăng nhập |</a>
+        <a href="register.html"> Đăng ký</a>
+    </div>
+    <div class="main">
+        <h3>Màn hình đăng nhập</h3>
+        <form action="home.html" method="post"> 
+            <label for="user">Username:</label>
+            <input type="text"><br><br>
+            <label for="pass">Mật Khẩu:</label>
+            <input type="password"><br><br>
+            <input type="checkbox">Ghi nhớ đăng nhập
+            <br><br>
+            <a href="" class="linkquen">Quên mật khẩu</a>
+            <button>Đăng nhập</button>
+        </form>
+    </div>
+    <div class="footer">Lập trình web &copy;1/2024 </div>
+
+    
+</body>
+
+</html>
