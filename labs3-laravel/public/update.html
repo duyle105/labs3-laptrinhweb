@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lập trình web</title>
+    <style>
+        body {
+            padding: 5px;
+            margin: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            border: 2px solid black;
+            color: black;
+            text-align: center;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        a:hover {
+            font-weight: bold;
+            color: #116497;
+        }
+
+        .main {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        input {
+            text-align: center;
+        }
+
+        .nhaplai {
+            display: i;
+        }
+        
+        .linkquen {
+            color: #4fdded;
+            margin-left: 100px;
+            margin-right: 30px;
+        }
+
+        button {
+            background: #116497;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"> Home |</a>
+        <a href="login.html"> Đăng nhập |</a>
+        <a href="register.html"> Đăng ký</a>
+    </div>
+    <div class="main">
+        <h3>Màn hình cập nhật</h3>
+        <form action="home.html" method="post">
+            <label for="user">Username:</label>
+            <input type="text" value="xxx"><br><br>
+            <label for="pass">Mật Khẩu:</label>
+            <input type="text" value="xxx"><br><br>
+            <label for="pass" class="nhaplai">Nhật lại mật khẩu:</label>
+            <input type="text" value="xxx"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" value="xxx">
+            <br><br>
+            <a href="" class="linkquen">Đã có tài khoản</a>
+            <button>Đăng ký</button>
+        </form>
+    </div>
+    <div class="footer">Lập trình web &copy;1/2024 </div>
+</body>
+</html>
