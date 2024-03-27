@@ -11,9 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('table_user', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::create('lnd_oders', function (Blueprint $table) {
+            $table->increments('order_id');
+            $table->integer('user_id');
+            $table->dateTime('updated_at');
+            $table->dateTime('create_at');
         });
     }
 
@@ -22,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('table_user');
+        Schema::dropIfExists('lnd_oders');
     }
 };
